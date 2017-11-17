@@ -1,0 +1,6 @@
+downstairs:
+  name: Beneden
+  view: yes
+  icon: mdi:home-outline
+  entities:
+    - group.living_room

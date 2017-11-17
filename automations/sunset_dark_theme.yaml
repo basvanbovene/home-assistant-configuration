@@ -1,0 +1,9 @@
+- alias: "Stel dark thema in bij zonsondergang"
+  trigger:
+    platform: sun
+    event: sunset
+    offset: "-01:00:00"
+  action:
+    - service: frontend.set_theme
+      data:
+        name: midnight_blue

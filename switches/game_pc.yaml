@@ -1,0 +1,4 @@
+- platform: wake_on_lan
+  mac_address: !secret switch_game_pc_mac
+  name: Game PC
+  host: !secret switch_game_pc_host

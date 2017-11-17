@@ -1,0 +1,7 @@
+default_view:
+  name: Nassaulaan
+  icon: mdi:home-modern
+  view: yes
+  entities:
+    - group.family
+    - group.buienradar

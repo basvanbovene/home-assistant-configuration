@@ -1,0 +1,6 @@
+family:
+  name: Familie
+  icon: mdi:account-multiple
+  control: hidden
+  entities:
+    - device_tracker.bas

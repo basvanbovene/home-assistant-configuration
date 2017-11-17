@@ -1,0 +1,6 @@
+upstairs:
+  name: Boven
+  view: yes
+  icon: mdi:stairs
+  entities:
+    - group.bedroom_bas

@@ -1,0 +1,33 @@
+# Ignore UUID.
+.uuid
+
+# Ignore configuration files for devices.
+.ios.conf
+phue.conf
+.spotify-token-cache
+
+# Ignore secrets
+secrets.yaml
+
+# Ignore deps directory.
+deps/
+
+# Ignore text to speech directory.
+tts/
+
+# Ignore Home Assistant log file.
+home-assistant.log
+
+# Ignore Home Assistant database file.
+home-assistant_v2.db
+home-assistant_v2.db-wal
+home-assistant_v2.db-shm
+
+# Ignore hombridge directory.
+homebridge/
+
+# Ignore Yarn lock file.
+yarn.lock
+
+# Ignore DS_store
+.DS_Store

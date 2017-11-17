@@ -1,0 +1,7 @@
+living_room:
+  name: Woonkamer
+  icon: mdi:sofa
+  control: hidden
+  entities:
+    - remote.apple_tv
+    - media_player.apple_tv

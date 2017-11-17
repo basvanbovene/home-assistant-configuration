@@ -1,0 +1,5 @@
+- name: HR Schiedam
+  latitude: !secret zone_hr_rotterdam_schiedam_latitude
+  longitude: !secret zone_hr_rotterdam_schiedam_longitude
+  radius: 1000
+  icon: mdi:school

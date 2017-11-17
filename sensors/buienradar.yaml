@@ -1,0 +1,13 @@
+- platform: buienradar
+  name: Buienradar
+  monitored_conditions:
+    - symbol
+    - humidity
+    - temperature
+    - temperature_1d
+    - windspeed
+    - pressure
+    - irradiance
+    - visibility
+    - winddirection
+    - rainchance_1d

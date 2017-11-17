@@ -1,0 +1,9 @@
+theme:
+  name: Thema
+  icon: mdi:format-paint
+  control: hidden
+  entities:
+    - automation.stel_dark_thema_in_bij_zonsondergang
+    - automation.stel_standaard_thema_in_bij_zonsopgang
+    - automation.theme_dark_on_boot
+    - automation.theme_default_on_boot

@@ -1,0 +1,6 @@
+automations:
+  view: yes
+  name: Automations
+  icon: mdi:home-automation
+  entities:
+    - group.theme

@@ -1,0 +1,10 @@
+buienradar:
+  name: Weer
+  icon: mdi:weather-cloudy
+  entities:
+    - sensor.buienradar_symbol
+    - sensor.buienradar_temperature
+    - sensor.buienradar_humidity
+    - sensor.buienradar_wind_speed
+    - sensor.buienradar_irradiance
+    - sensor.buienradar_pressure

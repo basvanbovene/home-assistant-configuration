@@ -1,0 +1,7 @@
+- platform: mqtt
+  name: "Sonoff Power"
+  state_topic: "stat/sonoff-1/POWER"
+  command_topic: "cmnd/sonoff-1/POWER"
+  optimistic: false
+  qos: 2
+  retain: true

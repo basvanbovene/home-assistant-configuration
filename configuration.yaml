@@ -1,0 +1,97 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Nassaulaan
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 2
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Europe/Amsterdam
+  # Customization file
+  customize: !include customize.yaml
+
+# Show links to resources in log and frontend
+# introduction:
+
+# Enables the frontend
+frontend:
+  themes: !include_dir_merge_named themes
+
+# Map
+map:
+
+# Enables configuration UI
+config:
+
+http:
+  # Uncomment this to add a password (recommended!)
+  api_password: !secret http_password
+  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+
+  ssl_certificate: !secret ssl_certificate_path
+  ssl_key: !secret ssl_key_path
+
+  # ip_ban_enabled: true
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+# updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+duckdns:
+  domain: !secret duckdns_domain
+  access_token: !secret duckdns_access_token
+
+# Discover some devices automatically
+discovery:
+  ignore:
+    - apple_tv
+    - samsung_tv
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+# ios
+ios:
+
+# switch
+switch: !include_dir_merge_list switches
+
+# media_player: !include_dir_merge_list media_players
+
+# apple tv
+apple_tv:
+  - host: !secret apple_tv_host
+    login_id: !secret apple_tv_login_id
+    name: Apple TV
+
+media_player: !include_dir_merge_list media_players
+
+# Track the sun
+sun:
+
+# Weather prediction
+sensor: !include_dir_merge_list sensors
+
+ Text to speech
+ tts:
+   - platform: google
+
+zone: !include_dir_merge_list zones
+
+group: !include_dir_merge_named groups
+automation: !include_dir_merge_list automations
+script: !include scripts.yaml

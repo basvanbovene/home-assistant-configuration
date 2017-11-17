@@ -1,0 +1,24 @@
+switch.game_pc:
+  homebridge_visible: true
+  homebridge_mfg: Asus
+  icon: mdi:desktop-classic
+switch.sonoff_power:
+  homebridge_visible: true
+  homebridge_mfg: Sonoff
+  icon: mdi:power-socket-eu
+remote.apple_tv:
+  homebridge_visible: true
+automation.stel_dark_thema_in_bij_zonsondergang:
+  icon: mdi:weather-sunset-down
+automation.stel_standaard_thema_in_bij_zonsopgang:
+  icon: mdi:weather-sunset-up
+sensor.speedtest_download:
+  icon: mdi:cloud-download
+sensor.speedtest_upload:
+  icon: mdi:cloud-upload
+sensor.speedtest_ping:
+  icon: mdi:cloud-check
+sensor.buienradar_temperature:
+  homebridge_visible: true
+group.all_automations:
+  hidden: false

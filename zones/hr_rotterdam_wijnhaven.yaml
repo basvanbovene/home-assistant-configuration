@@ -1,0 +1,5 @@
+- name: HR Wijnhaven
+  latitude: !secret zone_hr_rotterdam_wijnhaven_latitude
+  longitude: !secret zone_hr_rotterdam_wijnhaven_longitude
+  radius: 250
+  icon: mdi:school
