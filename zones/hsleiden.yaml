@@ -1,0 +1,5 @@
+- name: Hogeschool Leiden
+  latitude: !secret zone_hs_leiden_latitude
+  longitude: !secret zone_hs_leiden_longitude
+  radius: 200
+  icon: mdi:school

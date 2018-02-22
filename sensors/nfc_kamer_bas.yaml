@@ -1,0 +1,4 @@
+- platform: mqtt
+  name: nfc
+  state_topic: NFC_BAS_1/nfc_bas_1/tag
+  expire_after: 3

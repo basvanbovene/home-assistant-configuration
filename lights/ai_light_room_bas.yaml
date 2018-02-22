@@ -1,0 +1,10 @@
+- platform: mqtt_json
+  name: "Ai Light Room Bas"
+  state_topic: AiLight-177DCE
+  command_topic: AiLight-177DCE/set
+  color_temp: true
+  brightness: true
+  rgb: true
+  white_value: true
+  effect: false
+  optimistic: false

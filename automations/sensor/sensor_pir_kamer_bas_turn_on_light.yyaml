@@ -1,0 +1,19 @@
+- alias: sensor_pir_kamer_bas_turn_on_light
+  initial_state: True
+  trigger:
+    - platform: state
+      entity_id: sensor.beweging
+      to: "Beweging"
+      for:
+        seconds: 3
+  condition:
+    condition: and
+    conditions:
+      - condition: time
+        before: '22:00:00'
+      - condition: zone
+        entity_id: device_tracker.bas
+        state: zone.home
+  action:
+    - service: light.turn_on
+      entity_id: light.ai_light_room_bas

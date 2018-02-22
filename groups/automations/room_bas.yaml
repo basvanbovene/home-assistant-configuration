@@ -1,0 +1,8 @@
+room_bas_automations:
+  name: Kamer Bas
+  control: hidden
+  entities:
+    - automation.sensor_nfc_kamer_bas_toggle_light
+    - automation.sensor_nfc_kamer_bas_toggle_sonoff
+    - automation.sensor_ldr_kamer_bas_turn_on_light
+    - automation.sensor_turn_off_desk_light_on_pc_off

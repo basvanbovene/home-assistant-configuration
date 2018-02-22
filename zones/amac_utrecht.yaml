@@ -1,0 +1,5 @@
+- name: Amac Utrecht
+  latitude: !secret zone_amac_utrecht_latitude
+  longitude: !secret zone_amac_utrecht_longitude
+  radius: 250
+  icon: mdi:worker

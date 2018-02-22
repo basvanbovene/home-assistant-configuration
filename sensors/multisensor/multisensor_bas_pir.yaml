@@ -1,0 +1,4 @@
+- platform: mqtt
+  state_topic: "multisensor/kamer_bas"
+  name: "Beweging"
+  value_template: '{{ value_json.motion }}'

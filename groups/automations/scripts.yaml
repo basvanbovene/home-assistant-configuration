@@ -1,0 +1,5 @@
+scripts:
+  name: Scripts
+  control: hidden
+  entities:
+    - script.test_notify

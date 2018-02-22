@@ -1,0 +1,17 @@
+- alias: sensor_nfc_kamer_bas_toggle_sonoff
+  initial_state: True
+  trigger:
+    - platform: state
+      entity_id: sensor.nfc
+      to: "74442146"
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: switch.game_pc
+        state: "on"
+      - condition: time
+        before: '23:00:00'
+  action:
+    - service: switch.toggle
+      entity_id: switch.sonoff_power

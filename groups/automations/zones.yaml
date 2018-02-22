@@ -1,0 +1,5 @@
+zone_automations:
+  name: Zones
+  control: hidden
+  entities:
+    - automation.bas_leaves_home_lights

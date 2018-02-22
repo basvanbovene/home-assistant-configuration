@@ -1,0 +1,8 @@
+multisensor_bas:
+  name: Multisensor
+  control: hidden
+  entities:
+    - sensor.temperatuur
+    - sensor.luchtvochtigheid
+    - sensor.lichtsterkte
+    - sensor.beweging

@@ -1,0 +1,14 @@
+- alias: bas_leaves_home_lights
+  trigger:
+    - platform: zone
+      event: leave
+      zone: zone.home
+      entity_id: device_tracker.bas
+  condition:
+    - condition: state
+      entity_id: light.ai_light_room_bas
+      state: 'on'
+  action:
+    - service: notify.ios_bas
+      data:
+        message: "Je kamer lamp staat nog aan"

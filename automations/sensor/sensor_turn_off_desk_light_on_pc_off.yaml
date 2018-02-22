@@ -1,0 +1,13 @@
+- alias: sensor_turn_off_desk_light_on_pc_off
+  trigger:
+    - platform: state
+      entity_id: switch.game_pc
+      from: 'on'
+      to: 'off'
+      for:
+        seconds: 10
+  
+  action:
+    - service: switch.turn_off
+      entity_id: switch.sonoff_power
+      

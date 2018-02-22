@@ -1,0 +1,5 @@
+- platform: mqtt
+  state_topic: "multisensor/kamer_bas"
+  name: "Lichtsterkte"
+  unit_of_measurement: "LUX"
+  value_template: '{{ value_json.ldr }}'

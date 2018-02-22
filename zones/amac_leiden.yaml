@@ -1,0 +1,5 @@
+- name: Amac Leiden
+  latitude: !secret zone_amac_leiden_latitude
+  longitude: !secret zone_amac_leiden_longitude
+  radius: 250
+  icon: mdi:worker

@@ -1,0 +1,5 @@
+- platform: mqtt
+  state_topic: "multisensor/kamer_bas"
+  name: "Temperatuur"
+  unit_of_measurement: "°C"
+  value_template: '{{ value_json.temperature | round(1) }}'

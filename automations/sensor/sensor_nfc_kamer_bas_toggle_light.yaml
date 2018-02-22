@@ -1,0 +1,9 @@
+- alias: sensor_nfc_kamer_bas_toggle_light
+  initial_state: True
+  trigger:
+    - platform: state
+      entity_id: sensor.nfc
+      to: "74442146"
+  action:
+    - service: light.toggle
+      entity_id: light.ai_light_room_bas

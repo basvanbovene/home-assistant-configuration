@@ -1,0 +1,5 @@
+- name: Le Carrefour
+  latitude: !secret zone_le_carrefour_latitude
+  longitude: !secret zone_le_carrefour_longitude
+  radius: 200
+  icon: mdi:school

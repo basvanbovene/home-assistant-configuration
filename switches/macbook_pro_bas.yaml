@@ -1,0 +1,4 @@
+- platform: wake_on_lan
+  mac_address: !secret switch_macbook_pro_bas_mac
+  name: MacBook Pro van Bas
+  host: !secret switch_macbook_pro_bas_host

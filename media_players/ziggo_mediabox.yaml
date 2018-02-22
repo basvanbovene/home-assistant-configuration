@@ -1,0 +1,3 @@
+- platform: ziggo_mediabox_xl
+  host: !secret ziggo_mediabox_ip
+  name: Ziggo Mediabox

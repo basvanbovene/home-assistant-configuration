@@ -1,0 +1,6 @@
+test_notify:
+  alias: test_notify
+  sequence:
+    - service: notify.ios_bas
+      data:
+        message: "test notification"
