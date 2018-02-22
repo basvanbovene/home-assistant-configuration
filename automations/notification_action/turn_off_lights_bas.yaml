@@ -1,0 +1,12 @@
+- alias: turn_off_lights_notification_action
+  initial_state: True
+  trigger:
+    - platform: event
+      event_type: ios.notification_action_fired
+      event_data:
+        actionName: LIGHTSOFF
+  action:
+    - service: light.turn_off
+      entity_id: light.ai_light_room_bas
+    - service: switch.turn_off
+      entity_id: switch.sonoff_power

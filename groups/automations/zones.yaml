@@ -3,3 +3,4 @@ zone_automations:
   control: hidden
   entities:
     - automation.bas_leaves_home_lights
+    - automation.bas_leaves_home_pc

@@ -6,4 +6,6 @@ automations:
     - group.theme
     - group.room_bas_automations
     - group.zone_automations
+    - group.notifications
+    - group.notification_actions
     - group.scripts

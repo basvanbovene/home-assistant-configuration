@@ -1,0 +1,5 @@
+notifications:
+  name: Notificaties
+  control: hidden
+  entities:
+    

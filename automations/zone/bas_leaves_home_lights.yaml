@@ -5,10 +5,22 @@
       zone: zone.home
       entity_id: device_tracker.bas
   condition:
-    - condition: state
-      entity_id: light.ai_light_room_bas
-      state: 'on'
+    condition: or
+    conditions:
+      - condition: state
+        entity_id: light.ai_light_room_bas
+        state: 'on'
+      - condition: state
+        entity_id: switch.sonoff_power
+        state: 'on'
   action:
     - service: notify.ios_bas
       data:
-        message: "Je kamer lamp staat nog aan"
+        title: "Licht vergeten"
+        message: "Er staat nog licht aan in je kamer"
+        data:
+          push:
+            badge: 0
+            category: "kamer_bas_lights"
+          action_data:
+            entity_id: light.ai_light_room_bas

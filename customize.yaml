@@ -60,3 +60,10 @@ automation.sensor_turn_off_desk_light_on_pc_off:
 automation.bas_leaves_home_lights:
   icon: mdi:home-alert
   friendly_name: "Bas gaat weg, lamp staat aan"
+automation.bas_leaves_home_pc:
+  icon: mdi:home-alert
+  friendly_name: "Bas gaat weg, pc staat aan"
+
+automation.turn_off_lights_notification_action:
+  icon: mdi:lightbulb-outline
+  friendly_name: "Zet lichten kamer Bas uit"

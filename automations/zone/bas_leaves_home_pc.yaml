@@ -1,0 +1,15 @@
+- alias: bas_leaves_home_pc
+  trigger:
+    - platform: zone
+      event: leave
+      zone: zone.home
+      entity_id: device_tracker.bas
+  condition:
+    - condition: state
+      entity_id: switch.game_pc
+      state: 'on'
+  action:
+    - service: notify.ios_bas
+      data:
+        title: "PC vergeten"
+        message: "PC staat nog aan"

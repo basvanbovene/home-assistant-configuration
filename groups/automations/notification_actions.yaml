@@ -1,0 +1,5 @@
+notification_actions:
+  name: Notificatie acties
+  control: hidden
+  entities:
+    - automation.turn_off_lights_notification_action
