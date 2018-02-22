@@ -4,3 +4,6 @@ automations:
   icon: mdi:home-automation
   entities:
     - group.theme
+    - group.room_bas_automations
+    - group.zone_automations
+    - group.scripts

@@ -1,5 +1,0 @@
-- name: Amac
-  latitude: !secret amac_latitude
-  longitude: !secret amac_longitude
-  radius: 250
-  icon: mdi:worker

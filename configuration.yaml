@@ -56,7 +56,7 @@ discovery:
     - samsung_tv
 
 # Allows you to issue voice commands from the frontend in enabled browsers
-conversation:
+# conversation:
 
 # Enables support for tracking state changes over time
 history:
@@ -67,10 +67,6 @@ logbook:
 # ios
 ios:
 
-# switch
-switch: !include_dir_merge_list switches
-
-# media_player: !include_dir_merge_list media_players
 
 # apple tv
 apple_tv:
@@ -78,20 +74,17 @@ apple_tv:
     login_id: !secret apple_tv_login_id
     name: Apple TV
 
-media_player: !include_dir_merge_list media_players
-
 # Track the sun
 sun:
 
-# Weather prediction
+notify: !include_dir_merge_list notifies
+
+switch: !include_dir_merge_list switches
+light: !include_dir_merge_list lights
+media_player: !include_dir_merge_list media_players
 sensor: !include_dir_merge_list sensors
-
- Text to speech
- tts:
-   - platform: google
-
 zone: !include_dir_merge_list zones
 
 group: !include_dir_merge_named groups
 automation: !include_dir_merge_list automations
-script: !include scripts.yaml
+script: !include_dir_merge_named scripts

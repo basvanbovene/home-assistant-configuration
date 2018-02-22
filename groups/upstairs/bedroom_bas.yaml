@@ -1,8 +1,0 @@
-bedroom_bas:
-  name: Kamer Bas
-  icon: mdi:hotel
-  control: hidden
-  entities:
-    - switch.game_pc
-    - switch.sonoff_power
-    - media_player.spotify

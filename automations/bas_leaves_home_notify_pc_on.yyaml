@@ -1,4 +1,5 @@
 - alias: 'Bas leaves home, notify pc ON'
+  initial_state: True
   trigger:
     platform: zone
     entity_id: device_tracker.bas
@@ -9,7 +10,6 @@
       entitiy_id: switch.game_pc
       state: 'on'
   action:
-    - service: notify.bas
-      data_template:
-        title: "Game PC staat nog aan"
-        message: "De status van Game PC is {{ switch.game_pc.state }}"
+    service: notify.ios_bas
+    data:
+      message: "Game PC staat nog aan"

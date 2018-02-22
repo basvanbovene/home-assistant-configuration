@@ -1,4 +1,5 @@
-- alias: "Stel standaard thema in bij zonsopgang"
+- alias: "default_theme_on_sunrise"
+  initial_state: True
   trigger:
     platform: sun
     event: sunrise

@@ -4,3 +4,4 @@ upstairs:
   icon: mdi:stairs
   entities:
     - group.bedroom_bas
+    - group.multisensor_bas

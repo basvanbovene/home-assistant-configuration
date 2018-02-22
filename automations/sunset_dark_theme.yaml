@@ -1,4 +1,5 @@
-- alias: "Stel dark thema in bij zonsondergang"
+- alias: "dark_theme_on_sunset"
+  initial_state: True
   trigger:
     platform: sun
     event: sunset

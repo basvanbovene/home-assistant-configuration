@@ -2,23 +2,61 @@ switch.game_pc:
   homebridge_visible: true
   homebridge_mfg: Asus
   icon: mdi:desktop-classic
+
+switch.macbook_pro_van_bas:
+  icon: mdi:laptop-mac
+
 switch.sonoff_power:
   homebridge_visible: true
   homebridge_mfg: Sonoff
   icon: mdi:power-socket-eu
 remote.apple_tv:
   homebridge_visible: true
-automation.stel_dark_thema_in_bij_zonsondergang:
-  icon: mdi:weather-sunset-down
-automation.stel_standaard_thema_in_bij_zonsopgang:
-  icon: mdi:weather-sunset-up
-sensor.speedtest_download:
-  icon: mdi:cloud-download
-sensor.speedtest_upload:
-  icon: mdi:cloud-upload
-sensor.speedtest_ping:
-  icon: mdi:cloud-check
 sensor.buienradar_temperature:
   homebridge_visible: true
 group.all_automations:
   hidden: false
+light.ai_light_room_bas:
+  homebridge_visible: true
+  icon: mdi:lightbulb
+  friendly_name: Kamer Licht
+media_player.ziggo_mediabox:
+  homebridge_visible: true
+
+sensor.beweging:
+  icon: mdi:run-fast
+sensor.luchtvochtigheid:
+  icon: mdi:water-percent
+sensor.lichtsterkte:
+  icon: mdi:lightbulb-on-outline
+
+automation.dark_theme_on_sunset:
+  icon: mdi:weather-sunset-down
+  friendly_name: "Dark Thema bij zonsondergang"
+automation.default_theme_on_sunrise:
+  icon: mdi:weather-sunset-up
+  friendly_name: "Default Thema bij zonsopkomst"
+automation.theme_dark_on_boot:
+  icon: mdi:weather-night
+  friendly_name: "Dark Thema bij opstarten"
+automation.theme_default_on_boot:
+  icon: mdi:weather-sunny
+  friendly_name: "Default Thema bij opstarten"
+
+
+automation.sensor_nfc_kamer_bas_toggle_light:
+  icon: mdi:nfc
+  friendly_name: "Toggle AILight Bas bij NFC scan"
+automation.sensor_nfc_kamer_bas_toggle_sonoff:
+  icon: mdi:nfc
+  friendly_name: "Toggle bureau licht Bas bij NFC scan"
+automation.sensor_ldr_kamer_bas_turn_on_light:
+  icon: mdi:lightbulb-on-outline
+  friendly_name: "Zet lamp aan wanneer lichtsterkte < 200"
+automation.sensor_turn_off_desk_light_on_pc_off:
+  icon: mdi:power
+  friendly_name: "Zet bureau licht uit bij pc uit"
+
+automation.bas_leaves_home_lights:
+  icon: mdi:home-alert
+  friendly_name: "Bas gaat weg, lamp staat aan"
